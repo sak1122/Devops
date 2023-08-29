@@ -1,0 +1,7 @@
+git push --set-upstream https://github.com/sak1122/Devops.git  developeme
+nt //set new branch on remote and push the code
+
+git branch   //to see the branchers
+git branch -l
+git branch -a  //all
+git branch -r  //remote
