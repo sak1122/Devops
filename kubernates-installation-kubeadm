@@ -25,3 +25,31 @@ worker node also need to install all thigs which in rather than kubeadm init
 in configuration master admin.conf  copy to controlling user home  ./kube directory as file
 
 now you can controll the nodes
+
+
+//
+kubeadm reset
+--it will reset all the components
+
+thier is 4 phases to reset
+1)preflight
+2)update-clustor-status
+3)remove-etdc-member
+4)cleanup node
+
+you can skip any of the phase 
+kubeadm reset --skip-phases
+
+
+*kubernates clustor upgrade
+we have to take backup before any types of backup into kubernates
+/etc/kubernates/manifest
+/var/lib/etcd
+you can only update the minor version of the kubernates not the major
+kubernates itself takes backup of all the files before backup
+
+*kubernates tokens and certificates
+way to do secure communication between master and worker nodes
+kubeadm token list --to list the token if forget or know again 
+
+working day-5
