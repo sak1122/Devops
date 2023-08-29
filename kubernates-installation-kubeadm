@@ -19,3 +19,9 @@ kubeadm init ---after successfull installation it gives commad to set up mastern
 install network-module  ---kubectl install wave network  ---kubectl commaly to manage the nodes 
 
 
+worker node also need to install all thigs which in rather than kubeadm init
+
+//for controll this node no needs to install all those too only tool like kubectl can manage all nodes
+in configuration master admin.conf  copy to controlling user home  ./kube directory as file
+
+now you can controll the nodes

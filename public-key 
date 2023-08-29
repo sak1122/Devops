@@ -1,0 +1,3 @@
+ssh-keygen
+create twofile xyz and xyzpub  .shh folder
+take the content of xyzpub and paste it authorized key folder of remote server

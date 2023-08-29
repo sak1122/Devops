@@ -67,5 +67,7 @@ docker
 
 kubectl can installed on any node can manage many nodes as well.
 
+hostnamectl set-hostname name
+
 
 
