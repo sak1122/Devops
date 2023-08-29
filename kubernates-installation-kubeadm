@@ -5,10 +5,17 @@ machine should be linux machine.
 3)swapping off (swap area)
 4)kubectl
 5)kubeadm
-
+6)kubelet	
 
 
 
 docker installation
 docker can install  ---just simply by get.docker com
 docker installtion prette easy good
+
+kubeadm init ---after successfull installation it gives commad to set up masternode and workernode.
+--their is sha key that should be saved for further master and worker node configuration
+
+install network-module  ---kubectl install wave network  ---kubectl commaly to manage the nodes 
+
+
