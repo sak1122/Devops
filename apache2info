@@ -1,0 +1,19 @@
+apache2 setup 
+
+cd /etc/apache2/
+
+//the main configuration file
+cd /etc/apache2/apache2.conf
+
+
+//second config file
+cd /etc/apache2/sites-available
+000-default.conf
+
+
+//commands to enable customized configuration files
+$sudo a2ensite your_domain_1.conf
+$sudo a2ensite your_domain_2.conf
+
+//command to disable default configuration file
+$a2dissite 000-default.conf

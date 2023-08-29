@@ -1,0 +1,14 @@
+installing kubeadm
+machine should be linux machine.
+1)it should have requirement satisfaction instance t2 madium.
+2)it should installed with container runtime eg- containerd,docker,cri-o
+3)swapping off (swap area)
+4)kubectl
+5)kubeadm
+
+
+
+
+docker installation
+docker can install  ---just simply by get.docker com
+docker installtion prette easy good

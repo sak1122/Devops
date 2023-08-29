@@ -1,0 +1,71 @@
+top --system realtime analytics
+top t --cpu utilization
+top i -- each cpu utilization
+du -sh .  ---show how much data in current directory
+du -sh *  ---show how much data in each component of perticular directory
+shiftp
+
+
+##--perform action on services running in system
+systemctl status servicename
+systemctl start  servicename
+systemctl stop   servicename
+systemctl restart servicename
+systemctl reload servicename
+
+--same commands can run with service
+service servicename status,start,stop,restart,reload
+
+
+
+##--install and remove software from ubuntu
+sudo apt-get install softwarename
+sudo apt-get remove  softwarename
+sudo apt-get purge   software/service name  --it removes all configuration files as well
+
+##--file archiving and unarchiving using tar
+tar -cvf example.tar /dir/srcfile --archive file
+tar -xvf example.tar --unarchive file 
+tar -tvf example.tar   --content of the tar files
+tar -rvf example.tar  --adding tar file to alredy existing tar file
+tar -zcvf example.tar.zip srccc --zipped by gzip
+tar -jcvf example.tar.zip srccc --zipped by bzip2 tool
+tar -xvf  example.tar.zip  ---extarct zip tar file directly only 
+
+##--compression of files using gzip bzip2
+gzip foldername
+gzip -d filename.zip
+gunzip filename.zip
+bzip2 foldername
+bunzip2 zipfilename
+
+##--remove files and folders
+rm filename
+rm foldername
+rm -rf foldername ---folderrmove
+rm -rvf foldername --- summary and remove folder
+
+## java installation
+sudo apt-get install java-1.8.0-openjdk -y(this just ignore to write messege y or yes into prompt)
+
+##services running on perticular port
+netstat -nltp | grep 80
+
+
+##key generation in ubuntu
+--ssh-keygen  ...one private and one public key will be generated 
+cd /root
+cd .ssh
+in autorized key folder paste the public key of machine which you wann give access
+kubernates components wont works as per the 
+
+every clucter have
+kubadm 
+kubectl
+kublet
+docker
+
+kubectl can installed on any node can manage many nodes as well.
+
+
+

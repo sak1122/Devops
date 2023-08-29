@@ -1,0 +1,5 @@
+ sudo nano hosts
+sudo service nginx reload
+# gitlab url path
+/etc/gitlab/gitlab.rb file.
+myip http://192.168.101.136/

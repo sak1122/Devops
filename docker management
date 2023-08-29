@@ -1,0 +1,5 @@
+- docker host is system where docker is installed 
+- docker demon is process which handling container at runtime
+- docker image is isolated pakage where all dependencies and requirements are packed
+- docker client who running the commands on docker demon docker image into container 
+- docker-registory is remote repostory where docker images are stored remotely or where from we can take 			available images for usage 	

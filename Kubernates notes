@@ -1,0 +1,13 @@
+kubernates is container orchistrestion platform where me manae containers automatically generally kubernates is more relavent in tearm of using microservices..
+their are diffrent components in kubernates which we have to look at 
+
+###Master node
+1) etdc-its database in master node which takes notes of all activity
+2) api- its component of database where all actity  goes on
+3) sheduler- sheduler is look at which resourses are free and according to them it sheduled over their 
+4) controller- controller having overview of its child nodes pods and container
+
+###child node components
+1)kubelet-it is thing which connects child node and master node
+2)kubeproxy- its thing which controlling the networking activities over the nodes between master child and all other 
+

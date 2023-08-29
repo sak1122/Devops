@@ -1,0 +1,8 @@
+//dpkg error while installing or deleting any pakages or software i deleted sdr path from the file given in the below command 
+
+sudo nano /etc/environment
+
+
+//dpkg error to solve remove problematic pakages by using the following commands 
+
+sudo dpkg --remove --force-remove-reinstreq nginx-core nginx gitlab-ee  

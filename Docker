@@ -1,0 +1,69 @@
+docker image new with intractive with bin/bash
+
+sudo docker run -it ubuntu /bin/bash
+sudo docker ps
+sudo docker exec -i -t container name //just execute into running container 
+sudo docker ls
+sudo docker images ls
+sudo docker build 
+sudo docker pull
+//platform independent ,isolated images are runnable when they are run they called as container 
+docker -d run imagename ---it will be run in deattach mode 
+docker attach rub imagename
+docker attach dockercontainer-id
+docker sleep --sleep or do down after some timw
+docker run ubuntu sleep 20
+docker exec -it  cat var..data    (i-intractive ,t-pseudo terminal)
+
+
+//port mapping on docker 
+docker run -p 5000(this is external port):80 (this is internal docker port) webapp
+
+//volume mapping (data is not persistant in docker image container once you stop the container data gonna to be vanished so their for we have to map docker container data to local machine location )
+docker run -v /opt/datadir(external dir):/var/lib/mysql mysql
+
+
+docker inspect docker_container_id
+docker log 
+
+
+//create custom docker image using dockerfile
+..their we have to take base os image eg-ubuntu
+..copy .(current) /home/destination (this is the destination where to save)
+..how 
+...run ---this is command run while build the image.
+...cmd ["sleep","300"] this command run while container is in running state.
+...cmd sleep 300
+...ENTRYPOINT["sleep"]
+
+
+//we can specify environment varible which can used at docker run time as well
+=os.environ.get("name")
+
+//docker compose..........................
+docker-compose.yml
+-this file simplyfy the linking and adjusting images....independently therefore it is very useful'
+we can run whole application just by one command docker-compose up
+1)just run all images by using --name=Name  tag so it is useful to compose and join them'
+  we join apps by using --link nameofcontainerintag:nameofhost  nameofcontainer
+2)docker compose 
+  
+  
+//docker registry
+ists registary where docker images are stored 
+we can create custom or public private registary as well to store the docker images
+  
+//docker location in system....
+/var/lib/docker
+  
+//docker volume
+to persistent data
+docker volume create data_volume
+docker run -v data_volume2:/var/lib/mysql mysql .....this will create new volume automatically name data_volume2...
+docker system df -v  .....display the volume of docker images
+
+
+
+//docker networking
+docker having three networks host,none,bridge
+docker network create

@@ -1,0 +1,28 @@
+//create ec2 and install apache2
+update upgrade
+install php
+   -apt install php libapache2-mod-php php-mysql
+
+
+//create rds
+ .allow inbound ec2 to access the rds
+mysql -h database-1.c3544oo79aqd.us-east-1.rds.amazonaws.com -P 3306 --enable-cleartext-plugin --       user=admin  --password=Sakib1234
+----------------------
+  -h host-database endpoint
+  -p port
+  -u username
+  -pass password
+  
+  database inbound should allow ec2 to access
+  
+  on ec2 inbound mysql aurora port 3306 allowed
+  
+
+use index.php in host not index.html
+use db.inc.php etc...file for database configuration settings
+use above configuration
+
+add servername and serveralias ...into the configuration file.
+
+
+        

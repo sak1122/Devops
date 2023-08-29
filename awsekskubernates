@@ -1,0 +1,16 @@
+it should be done into sigle iam user
+
+
+step 1)create clustor
+     2) assingrole using eksclustor name--ekstomanageservices
+       amozoneksclustorpolicy
+     3)aws eks update-kubeconfig --name myclustor
+
+
+
+//targetgroup
+2)awseksgtgroup
+ create iam role with ec2 having requred permissions name--awseksgtgroup
+ --awsekscni
+ --awseksworker
+ --amazonec2containerregistaryrreadonly

@@ -1,0 +1,36 @@
+////s3 bucket creation...
+1)give public acess
+2)enable versioning
+3)go properties section of created s3 bucket
+4)change it bucket policy add access to static website
+5)thier is static website section
+
+
+////using route 53 for mapping dns
+1)create hosted zone in route53
+2)inter name of dns by eg)abc.com,abc.in
+3)create record in hosted zone
+4)for s3 - use alias and s3 bucket endpoint
+5)type A  ipv4 to aws resourses
+6)take NS records from route 53 and add them to godaddy nameserver(nameservers custom dns)
+
+////domain name to s3 bucket and cloudfront distribution
+( cloudfront is content dilevery network adding https encryption+wildcard *.abc.com  domain name tls cert ddos protection from field )
+
+1)use acm 
+..where we have to add two request ssl certificate for two 
+ a)for wildcard domain *.abc.com
+ b)another for abc.com
+ ..add cname to route 53 for acl
+ 
+////cloudfront
+create distribution
+1)origin domain name select as s3 domain
+2)viewer protocol as redirect http to https
+add alternative domain names
+ .abc.com
+  abc.com
+3)custom ssl certificate
+4)default root object ....index.html  --which is specified in s3 bucket
+5)take domain name from cloudfront distribution
+6)create new recordset in route53.. name:www,type-A type of adddress,alias-cloudfront domain name
