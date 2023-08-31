@@ -63,3 +63,26 @@ kubernates object is persistant entities represents your kubernates clustor
    kubectl apply .yml
    kubectl describe podname  //to get the info about the podsss
    it all connected with api server all these things    
+
+
+deployement--
+ deployment yaml for managing the pods -autoscaling and all
+services--
+ services used for extenal and network access communication 
+ 1)clustorip
+ 2)nodeport
+ 3)load-balancer 
+
+
+load-balancer===> nodeport====>clustorip====>podip===>services
+
+
+*kubernates namespaces,taints,labels
+kubernates supports multiple virtual clustor backed with single physical server,this virtual server called as namespace
+kubectl get namespaces  ---scenario like prod,dev,test team wann three infra at that time we create diffrent namespaces using namespaces we deffrential diffrent environments in give space or clustorsn
+namespace creates more clarity in the kubernates clustor
+
+-taints
+taints used in node for applying restriction on the pods    
+-labels
+including grouping, selecting, and organizing resources.it  is used to group all resourses
