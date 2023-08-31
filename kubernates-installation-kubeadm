@@ -53,3 +53,13 @@ way to do secure communication between master and worker nodes
 kubeadm token list --to list the token if forget or know again 
 
 working day-5
+kubernates object  --its known as record of intent
+kubernates object is persistant entities represents your kubernates clustor
+--kubectl api-resourses
+
+*to create pod we have specify it .yml specification file
+ using master node -y we have to apply the specification
+ command uses:
+   kubectl apply .yml
+   kubectl describe podname  //to get the info about the podsss
+   it all connected with api server all these things    
