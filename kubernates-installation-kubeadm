@@ -86,3 +86,16 @@ namespace creates more clarity in the kubernates clustor
 taints used in node for applying restriction on the pods    
 -labels
 including grouping, selecting, and organizing resources.it  is used to group all resourses
+
+
+*resourse-quota
+resource quota always set to namespace
+(kubernates api reference is best to write yaml file which give reference to all the resourses(use one page reference))
+only can set up resource quata to namespace not other than that.it won, work any other resourses scattered over there on the following patterns as well
+*limit-range --what is limit range
+
+
+kubernates follow the stack 
+where image given services,deployment,replicaset  stack saved.
+services- having three types clustorip,node ip,load balancer, which specifies they internal and external communication between nodes pods and clustor of pods
+deployment-deployment specify which images which set of configuration should we follow and set ,
