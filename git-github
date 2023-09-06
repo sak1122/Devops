@@ -1,6 +1,21 @@
-git init --bare  #it is bare repo where can only pull or push the code(usualy used of creatiing the own central git server)
+git init --bare  #it is bare repo where can only pull or push the code(usualy used of creatiing the own central git server) where we need to set up the repository which act as git server 
 
 
+for remote server on cloud there is no  root login setup over there to set this needs to following steps
+
+1)vi   /etc/ssh/sshd_config
+2) passwordauthentication yes, permuterootlogin yes --these two things needs to change
+3)systemctl restart sshd
+
+
+@to commit code we have to set global user name and password
+git config --global user.name "sakib"
+git config --global user.email "sakib@gmail.com"
+git add .    *
+this add files to stage where tracking of files are possible
+git commit -m "messege"
+git log
+git remote add origin  url-of-remote
 
 
 git push --set-upstream https://github.com/sak1122/Devops.git  developeme
