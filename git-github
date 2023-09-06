@@ -1,3 +1,8 @@
+git init --bare  #it is bare repo where can only pull or push the code(usualy used of creatiing the own central git server)
+
+
+
+
 git push --set-upstream https://github.com/sak1122/Devops.git  developeme
 nt //set new branch on remote and push the code
 

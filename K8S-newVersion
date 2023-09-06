@@ -15,3 +15,10 @@ install -go using url-https://go.dev/doc/install
 execute all command given below
 6)kubectl apply -f https://github.com/coreos/flannel/raw/master/Documentation/kube-flannel.yml
 7)kubeadm join 172.31.80.146:6443 --token xojw2f.lzlots0p8ewsut0a \ --cri-socket "unix:///var/run/cri-dockerd.sock" \ --discovery-token-ca-cert-hashsha256:4379fc5b31c3818766d61361ec3081de22b0f695b783c81a9f58de805dfc
+
+
+for remote server on cloud there is no  root login setup over there to set this needs to following steps
+
+1)vi   /etc/ssh/sshd_config
+2) passwordauthentication yes, rootlogin yes --these two things needs to change
+3)systemctl restart sshd
