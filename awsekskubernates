@@ -14,3 +14,8 @@ step 1)create clustor
  --awsekscni
  --awseksworker
  --amazonec2containerregistaryrreadonly
+
+
+*initcontainer 
+used or run before creating main container 
+it used for some prechecking prechecking of things
