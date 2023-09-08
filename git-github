@@ -15,6 +15,7 @@ git add .    *
 this add files to stage where tracking of files are possible
 git commit -m "messege"
 git log
+git log -p   //to show the commits with the changes
 git remote add origin  url-of-remote
 
 
@@ -25,3 +26,9 @@ git branch   //to see the branchers
 git branch -l
 git branch -a  //all
 git branch -r  //remote
+
+git merge source destination
+eg--git merge staging master   -staging to master
+git merge sourcebranchtomerge    ---
+eg-git checkout master --in master
+   git merge stage
