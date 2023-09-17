@@ -1,3 +1,14 @@
-ssh-keygen
-create twofile xyz and xyzpub  .shh folder
-take the content of xyzpub and paste it authorized key folder of remote server
+clientside
+1)ssh-keygen (by default all) just passphrase no
+2)in home dir of user there will be ~/.shh/  id_rsa.pub
+3)cat id_rsa.pub
+
+serverside
+passwd - command can generate new passwd for root
+
+1) cd ~ (go to home directory)
+2) cd ./ssh
+3) nano authorizedkey
+4) copy paste the content from id_rsa.pub(from client side who wann login)
+
+ssh user@address  --happy to login
